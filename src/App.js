@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+//import StatelessComponent from "./StatelessComponent";
+//import ClassBasedComponent from "./ClassBasedComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [variable, setVariable] = useState(false);
+  const text = variable ? "Active" : "Inactive";
+
+  const handleOnClick = () => setVariable(!variable);
+
+  return <button onClick={handleOnClick}>{text}</button>;
+  //stateless functional component
+  //return <StatelessComponent />;
+  //class based component
+  //return <ClassBasedComponent />;
 }
 
 export default App;
