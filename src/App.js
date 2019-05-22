@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react"; // { useState }
 //import StatelessComponent from "./StatelessComponent";
 //import ClassBasedComponent from "./ClassBasedComponent";
 //import CounterClassBasedComponent from "./CounterClassBasedComponent";
 //import LifecycleMethodsInClassBasedComponent from "./useEffectHook/LifecycleMethodsInClassBasedComponent";
-import UseEffectHook from "./useEffectHook/UseEffectHook";
+//import UseEffectHook from "./useEffectHook/UseEffectHook";
+import UseEffectExample from "./useEffectHook/useEffectExample";
 
 /*function IntroductionToUseState() {
   const [variable, setVariable] = useState(false);
@@ -30,7 +31,7 @@ import UseEffectHook from "./useEffectHook/UseEffectHook";
   );
 }*/
 
-function UseStateWithObjectArgument() {
+/*function UseStateWithObjectArgument() {
   /*const [state, setState] = useState({
     city: "",
     country: ""
@@ -68,7 +69,7 @@ function UseStateWithObjectArgument() {
       <h4>You live in {`${state.city}, ${state.country}`}</h4>
     </form>
   );*/
-
+/*
   const [city, setCity] = useState("");
   const [country, setCountry] = useState("");
   const handleChangeCity = event => setCity(event.target.value);
@@ -97,7 +98,7 @@ function UseStateWithObjectArgument() {
       <h4>You live in {`${city}, ${country}`}</h4>
     </form>
   );
-}
+}*/
 
 function App() {
   //stateless functional component
@@ -122,7 +123,10 @@ function App() {
   //return <LifecycleMethodsInClassBasedComponent />;
 
   //useEffect Hook
-  return <UseEffectHook />;
+  //return <UseEffectHook />;
+
+  //useEffect Hook
+  return <UseEffectExample />;
 }
 
 export default App;
