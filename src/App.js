@@ -4,7 +4,12 @@ import React from "react"; // { useState }
 //import CounterClassBasedComponent from "./CounterClassBasedComponent";
 //import LifecycleMethodsInClassBasedComponent from "./useEffectHook/LifecycleMethodsInClassBasedComponent";
 //import UseEffectHook from "./useEffectHook/UseEffectHook";
-import UseEffectExample from "./useEffectHook/useEffectExample";
+//import UseEffectExample from "./useEffectHook/useEffectExample";
+//import CreateContextHook from "./createContextHook/CreateContextHook";
+//import ReactContext from "./createContextHook/ReactContext";
+//import CustomHook from "./customHook/CustomHook";
+//import CounterCustomHook from "./customHook/CounterCustomHook";
+import CustomHookChallenge from "./customHook/CustomHookChallenge";
 
 /*function IntroductionToUseState() {
   const [variable, setVariable] = useState(false);
@@ -125,8 +130,23 @@ function App() {
   //useEffect Hook
   //return <UseEffectHook />;
 
-  //useEffect Hook
-  return <UseEffectExample />;
+  //useEffect Hook Example
+  //return <UseEffectExample />;
+
+  //createContext Hook
+  //return <CreateContextHook />;
+
+  //React Context
+  //return <ReactContext />;
+
+  //Custom Hook
+  //return <CustomHook />;
+
+  //Counter Custom Hook
+  //return <CounterCustomHook />;
+
+  //Counter Custom Hook
+  return <CustomHookChallenge />;
 }
 
 export default App;
